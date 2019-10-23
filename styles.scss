@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
-$primary-color: #EBEBED;
-$secondary-color: #FF0126;;
+$primary-color: rgb(255, 255, 255);
+$secondary-color: rgba(241, 28, 60, 0.884);
+$bg-color: #3c164d;
+$bg-secondary: rgb(222, 228, 238);
 
 * {
   margin: 0;
@@ -20,19 +22,19 @@ $secondary-color: #FF0126;;
 }
 
 body {
-  
-  font-family: 'Roboto', sans-serif, Arial;
+  background: $bg-color;
+  font-family: 'Ubuntu', sans-serif, Arial;
 }
 
 header {
-  background: linear-gradient(rgba(32, 32, 32, 0.1), rgba(225, 225, 225, 0.1)) ,url('../../space.jpg');
+  background: linear-gradient(rgba(165, 71, 71, 0.1), rgb(60, 22, 77)) ,url('../../space.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   // border-bottom-left-radius: 6px;
   // border-bottom-right-radius: 6px;
   box-shadow: 0 20px 25px -5px rgba(94, 93, 93, 0.1), 0 10px 10px -5px rgba(97, 96, 96, 0.04);
-  height: 100vh;
+  height: 80vh;
 
 }
 
@@ -42,11 +44,13 @@ nav {
   justify-content: space-between;
   margin: 1rem 0;
   
+  
 
   .nav-brand h3 {
     // border: 3px solid $primary-color;
     padding: 0.4rem 2rem;
     color: $primary-color;
+    font-size: 1.6rem;
 
     span {
       background: $secondary-color;
@@ -54,6 +58,7 @@ nav {
       border: solid 0 white;
       border-radius: 50%;
       margin-right: -1.1rem;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     }
   }
 
@@ -65,9 +70,9 @@ nav {
       color: $primary-color;
       border-bottom: 3px transparent solid;
       transition: 0.3s border-color;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       padding: 0.6rem 0;
-      
+      font-weight: 600;
 
       &:hover {
         border-color: $secondary-color;
@@ -82,17 +87,20 @@ section#showcase {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 100vh;
   
 
   h3{
     margin: 2rem 0;
     color: $primary-color;
+    font-size: 2.3rem;
   }
 
   span{
     margin: 2rem 0;
     color: $primary-color;
+    font-size: 2.1rem;
+    font-weight: 900;
   }
 
   .work-btn {
@@ -103,6 +111,8 @@ section#showcase {
     transition: .3s ease;
     // border-radius: 25px;
     border-radius: 30% 70% 26% 74% / 30% 30% 70% 70% ;
+    text-transform: uppercase;
+    font-weight: 900;
 
     &:hover {
       color: $secondary-color;
@@ -121,12 +131,16 @@ section#about-me{
   // justify-content: center;
   text-align: center;
   padding: 3rem 1rem;
-  // max-width: 1100px;
   margin: auto;
-  background-image: linear-gradient(to top, #340c40, #412d5c, #4f4b75, #626a8d, #7b88a2);
+  background: linear-gradient(rgb(60, 22, 77), rgba(60, 22, 77, 0.555));
 
+  .container {
+    max-width: 900px;
+  }
+
+ 
   h1{
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     padding-top: 1rem;
     font-weight: 700;
 
@@ -138,24 +152,205 @@ section#about-me{
       margin: 0 auto;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      width: 50px;
+      width: 20%;
     }
   }
 
   
-
-  span{
-    font-size: 1.1rem;
+  p{
+    font-size: 1.2rem;
     padding: 3rem 0;
     font-weight: 0;
   }
 
   li {
     padding: 0.4rem 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 100;
   }
 }
 
+// SPECIALIZE
+
+.specialize {
+  padding: 3rem 0;
+  text-align: center;
+  background: rgb(222, 228, 238);
+  color: $primary-color;
+
+  h3{
+    color: $secondary-color;
+    padding: 1rem 0;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      border: 3px solid $secondary-color;
+      border-radius: 25px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 20%;
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &>div {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1rem;
+      margin: 3rem 1rem;
+      background: $secondary-color;
+      // border-radius: 9% 91% 15% 85% / 94% 8% 92% 6% ;
+
+      i{
+        padding: 2rem 0;
+      }
+
+      p{
+        padding: 2rem 4rem;
+        font-size: 1.2rem;
+        font-weight: 0;
+      }
+    }
+  }
+}
+
+// SKILLS
+
+section.skills{
+  text-align: center;
+  padding: 3rem 1rem;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    }
 
 
+  h3{
+    color: $primary-color;
+    padding: 1rem 0;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      border: 3px solid $primary-color;
+      border-radius: 25px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 20%;
+    }
+  }
+
+  i{
+    color: $secondary-color;
+    margin: 3rem;
+  }
+}
+
+// PROJECTS
+
+section.projects{
+  padding: 3rem 1rem;
+  background: $bg-secondary;
+  text-align: center;
+
+  h3{
+    color: $secondary-color;
+    padding: 1rem 0;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      border: 3px solid $primary-color;
+      border-radius: 25px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 20%;
+    }
+  }
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.6rem;
+}
+
+
+.content {
+  position: relative;
+  // width: 400px;
+  margin: auto;
+  overflow: hidden;
+
+  img{
+    width: 100%;
+  }
+  
+
+  .content-overlay {
+    background: linear-gradient(rgba(241, 28, 60, 0.884), rgba(241, 28, 60, 0.541));
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+  }
+
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding: 0 1rem;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+
+    h3 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $primary-color;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,18 +17,19 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif, Arial;
+  background: #3c164d;
+  font-family: 'Ubuntu', sans-serif, Arial;
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 32, 32, 0.1)), to(rgba(225, 225, 225, 0.1))), url("../../space.jpg");
-  background: linear-gradient(rgba(32, 32, 32, 0.1), rgba(225, 225, 225, 0.1)), url("../../space.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(165, 71, 71, 0.1)), to(#3c164d)), url("../../space.jpg");
+  background: linear-gradient(rgba(165, 71, 71, 0.1), #3c164d), url("../../space.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 20px 25px -5px rgba(94, 93, 93, 0.1), 0 10px 10px -5px rgba(97, 96, 96, 0.04);
           box-shadow: 0 20px 25px -5px rgba(94, 93, 93, 0.1), 0 10px 10px -5px rgba(97, 96, 96, 0.04);
-  height: 100vh;
+  height: 80vh;
 }
 
 nav {
@@ -46,15 +47,17 @@ nav {
 
 nav .nav-brand h3 {
   padding: 0.4rem 2rem;
-  color: #EBEBED;
+  color: white;
+  font-size: 1.6rem;
 }
 
 nav .nav-brand h3 span {
-  background: #FF0126;
+  background: rgba(241, 28, 60, 0.884);
   padding: 1rem;
   border: solid 0 white;
   border-radius: 50%;
   margin-right: -1.1rem;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 nav .nav-list {
@@ -65,16 +68,17 @@ nav .nav-list {
 
 nav .nav-list a {
   margin-left: 3rem;
-  color: #EBEBED;
+  color: white;
   border-bottom: 3px transparent solid;
   -webkit-transition: 0.3s border-color;
   transition: 0.3s border-color;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 0.6rem 0;
+  font-weight: 600;
 }
 
 nav .nav-list a:hover {
-  border-color: #FF0126;
+  border-color: rgba(241, 28, 60, 0.884);
 }
 
 section#showcase {
@@ -91,75 +95,273 @@ section#showcase {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 60vh;
+  height: 100vh;
 }
 
 section#showcase h3 {
   margin: 2rem 0;
-  color: #EBEBED;
+  color: white;
+  font-size: 2.3rem;
 }
 
 section#showcase span {
   margin: 2rem 0;
-  color: #EBEBED;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 900;
 }
 
 section#showcase .work-btn {
   margin: 2rem 0;
-  color: #EBEBED;
+  color: white;
   padding: 2rem 2rem;
-  background: #FF0126;
+  background: rgba(241, 28, 60, 0.884);
   -webkit-transition: .3s ease;
   transition: .3s ease;
   border-radius: 30% 70% 26% 74% / 30% 30% 70% 70%;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 section#showcase .work-btn:hover {
-  color: #FF0126;
-  background: #EBEBED;
+  color: rgba(241, 28, 60, 0.884);
+  background: white;
 }
 
 section#about-me {
-  color: #EBEBED;
+  color: white;
   text-align: center;
   padding: 3rem 1rem;
   margin: auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#340c40), color-stop(#412d5c), color-stop(#4f4b75), color-stop(#626a8d), to(#7b88a2));
-  background-image: linear-gradient(to top, #340c40, #412d5c, #4f4b75, #626a8d, #7b88a2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c164d), to(rgba(60, 22, 77, 0.555)));
+  background: linear-gradient(#3c164d, rgba(60, 22, 77, 0.555));
 }
 
-section#about-me rgba(123, 136, 162, 0.24)
-h1 {
-  font-size: 1.9rem;
+section#about-me .container {
+  max-width: 900px;
+}
+
+section#about-me h1 {
+  font-size: 2.3rem;
   padding-top: 1rem;
   font-weight: 700;
 }
 
-section#about-me rgba(123, 136, 162, 0.24)
-h1:after {
+section#about-me h1:after {
   content: '';
-  border: 3px solid #FF0126;
+  border: 3px solid rgba(241, 28, 60, 0.884);
   border-radius: 25px;
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 50px;
+  width: 20%;
 }
 
-section#about-me span {
-  font-size: 1.1rem;
+section#about-me p {
+  font-size: 1.2rem;
   padding: 3rem 0;
   font-weight: 0;
 }
 
 section#about-me li {
   padding: 0.4rem 0;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 100;
 }
 
-.svg-1 {
-  margin-top: -6rem;
+.specialize {
+  padding: 3rem 0;
+  text-align: center;
+  background: #dee4ee;
+  color: white;
+}
+
+.specialize h3 {
+  color: rgba(241, 28, 60, 0.884);
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+.specialize h3:after {
+  content: '';
+  border: 3px solid rgba(241, 28, 60, 0.884);
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+}
+
+.specialize .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.specialize .grid-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+  margin: 3rem 1rem;
+  background: rgba(241, 28, 60, 0.884);
+}
+
+.specialize .grid-container > div i {
+  padding: 2rem 0;
+}
+
+.specialize .grid-container > div p {
+  padding: 2rem 4rem;
+  font-size: 1.2rem;
+  font-weight: 0;
+}
+
+section.skills {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+section.skills .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+section.skills .grid-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.skills h3 {
+  color: white;
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+section.skills h3:after {
+  content: '';
+  border: 3px solid white;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+}
+
+section.skills i {
+  color: rgba(241, 28, 60, 0.884);
+  margin: 3rem;
+}
+
+section.projects {
+  padding: 3rem 1rem;
+  background: #dee4ee;
+  text-align: center;
+}
+
+section.projects h3 {
+  color: rgba(241, 28, 60, 0.884);
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+section.projects h3:after {
+  content: '';
+  border: 3px solid white;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+}
+
+.grid-container2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.6rem;
+}
+
+.content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content .content-overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 28, 60, 0.884)), to(rgba(241, 28, 60, 0.541)));
+  background: linear-gradient(rgba(241, 28, 60, 0.884), rgba(241, 28, 60, 0.541));
+  position: absolute;
+  height: 98%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.content .content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content .content-details {
+  position: absolute;
+  text-align: center;
+  padding: 0 1rem;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.content .content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content .content:hover .content-details h3 {
+  color: white;
+}
+
+.content .content:hover .content-details p {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
