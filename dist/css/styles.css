@@ -29,7 +29,7 @@ header {
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 20px 25px -5px rgba(94, 93, 93, 0.1), 0 10px 10px -5px rgba(97, 96, 96, 0.04);
           box-shadow: 0 20px 25px -5px rgba(94, 93, 93, 0.1), 0 10px 10px -5px rgba(97, 96, 96, 0.04);
-  height: 80vh;
+  height: 100vh;
 }
 
 nav {
@@ -52,7 +52,7 @@ nav .nav-brand h3 {
 }
 
 nav .nav-brand h3 span {
-  background: rgba(241, 28, 60, 0.884);
+  background: rgba(241, 28, 60, 0.678);
   padding: 1rem;
   border: solid 0 white;
   border-radius: 50%;
@@ -78,7 +78,7 @@ nav .nav-list a {
 }
 
 nav .nav-list a:hover {
-  border-color: rgba(241, 28, 60, 0.884);
+  border-color: rgba(241, 28, 60, 0.678);
 }
 
 section#showcase {
@@ -115,7 +115,7 @@ section#showcase .work-btn {
   margin: 2rem 0;
   color: rgba(255, 255, 255, 0.925);
   padding: 2rem 2rem;
-  background: rgba(241, 28, 60, 0.884);
+  background: rgba(241, 28, 60, 0.678);
   -webkit-transition: .3s ease;
   transition: .3s ease;
   border-radius: 30% 70% 26% 74% / 30% 30% 70% 70%;
@@ -124,7 +124,7 @@ section#showcase .work-btn {
 }
 
 section#showcase .work-btn:hover {
-  color: rgba(241, 28, 60, 0.884);
+  color: rgba(241, 28, 60, 0.678);
   background: rgba(255, 255, 255, 0.925);
 }
 
@@ -149,7 +149,7 @@ section#about-me h1 {
 
 section#about-me h1:after {
   content: '';
-  border: 3px solid rgba(241, 28, 60, 0.884);
+  border: 3px solid rgba(241, 28, 60, 0.678);
   border-radius: 25px;
   display: block;
   margin: 0 auto;
@@ -178,7 +178,7 @@ section#about-me li {
 }
 
 .specialize h3 {
-  color: rgba(241, 28, 60, 0.884);
+  color: rgba(241, 28, 60, 0.678);
   padding: 1rem 0;
   font-size: 2.3rem;
   padding-top: 1rem;
@@ -187,7 +187,7 @@ section#about-me li {
 
 .specialize h3:after {
   content: '';
-  border: 3px solid rgba(241, 28, 60, 0.884);
+  border: 3px solid rgba(241, 28, 60, 0.678);
   border-radius: 25px;
   display: block;
   margin: 0 auto;
@@ -213,7 +213,7 @@ section#about-me li {
           flex-direction: column;
   grid-gap: 1rem;
   margin: 3rem 1rem;
-  background: rgba(241, 28, 60, 0.884);
+  background: rgba(241, 28, 60, 0.678);
   border-radius: 6px;
 }
 
@@ -272,7 +272,7 @@ section.skills h3:after {
 }
 
 section.skills i {
-  color: rgba(241, 28, 60, 0.884);
+  color: rgba(241, 28, 60, 0.678);
   margin: 3rem;
 }
 
@@ -283,7 +283,7 @@ section.projects {
 }
 
 section.projects h3 {
-  color: rgba(241, 28, 60, 0.884);
+  color: rgba(241, 28, 60, 0.678);
   padding: 1rem 0;
   font-size: 2.3rem;
   padding-top: 1rem;
@@ -292,7 +292,7 @@ section.projects h3 {
 
 section.projects h3:after {
   content: '';
-  border: 3px solid rgba(241, 28, 60, 0.884);
+  border: 3px solid rgba(241, 28, 60, 0.678);
   border-radius: 25px;
   display: block;
   margin: 0 auto;
@@ -448,7 +448,7 @@ section.contact-me .grid-container button {
   background: rgba(255, 255, 255, 0.925);
   margin: 0 auto;
   border-radius: 6px;
-  background: rgba(241, 28, 60, 0.884);
+  background: rgba(241, 28, 60, 0.678);
   color: rgba(255, 255, 255, 0.925);
   -webkit-transition: 0.1s all ease-in;
   transition: 0.1s all ease-in;
@@ -458,7 +458,7 @@ section.contact-me .grid-container button {
 
 section.contact-me .grid-container button:hover {
   background: rgba(255, 255, 255, 0.925);
-  color: rgba(241, 28, 60, 0.884);
+  color: rgba(241, 28, 60, 0.678);
 }
 
 section.contact-me .my-info h2 {
@@ -497,7 +497,7 @@ section.contact-me .my-info .grid-container2 {
 
 section.contact-me .my-info .grid-container2 > div {
   background: rgba(255, 255, 255, 0.925);
-  color: rgba(241, 28, 60, 0.884);
+  color: rgba(241, 28, 60, 0.678);
   width: 100%;
   margin: 1rem 0;
   padding: 1rem 0;
@@ -516,7 +516,7 @@ section.contact-me .my-info .grid-container2 > div p {
 
 section.footer {
   padding: 3rem 1rem;
-  background: rgba(241, 28, 60, 0.884);
+  background: rgba(241, 28, 60, 0.678);
 }
 
 section.footer .grid-container {
@@ -533,7 +533,7 @@ section.footer .grid-container {
 }
 
 section.footer .grid-container p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 section.footer .grid-container .footer-icons i {

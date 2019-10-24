@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 $primary-color: rgba(255, 255, 255, 0.925);
-$secondary-color: rgba(241, 28, 60, 0.884);
+$secondary-color: rgba(241, 28, 60, 0.678);
 $bg-color: #3c164d;
 $bg-secondary: rgb(222, 228, 238);
 
@@ -34,7 +34,7 @@ header {
   // border-bottom-left-radius: 6px;
   // border-bottom-right-radius: 6px;
   box-shadow: 0 20px 25px -5px rgba(94, 93, 93, 0.1), 0 10px 10px -5px rgba(97, 96, 96, 0.04);
-  height: 80vh;
+  height: 100vh;
 
 }
 
@@ -512,7 +512,7 @@ section.footer {
     color: $primary-color;
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     .footer-icons i {
