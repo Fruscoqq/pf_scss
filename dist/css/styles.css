@@ -47,7 +47,7 @@ nav {
 
 nav .nav-brand h3 {
   padding: 0.4rem 2rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   font-size: 1.6rem;
 }
 
@@ -68,7 +68,7 @@ nav .nav-list {
 
 nav .nav-list a {
   margin-left: 3rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   border-bottom: 3px transparent solid;
   -webkit-transition: 0.3s border-color;
   transition: 0.3s border-color;
@@ -100,20 +100,20 @@ section#showcase {
 
 section#showcase h3 {
   margin: 2rem 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   font-size: 2.3rem;
 }
 
 section#showcase span {
   margin: 2rem 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   font-size: 2.1rem;
   font-weight: 900;
 }
 
 section#showcase .work-btn {
   margin: 2rem 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   padding: 2rem 2rem;
   background: rgba(241, 28, 60, 0.884);
   -webkit-transition: .3s ease;
@@ -125,11 +125,11 @@ section#showcase .work-btn {
 
 section#showcase .work-btn:hover {
   color: rgba(241, 28, 60, 0.884);
-  background: white;
+  background: rgba(255, 255, 255, 0.925);
 }
 
 section#about-me {
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   text-align: center;
   padding: 3rem 1rem;
   margin: auto;
@@ -174,7 +174,7 @@ section#about-me li {
   padding: 3rem 0;
   text-align: center;
   background: #dee4ee;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
 }
 
 .specialize h3 {
@@ -214,6 +214,7 @@ section#about-me li {
   grid-gap: 1rem;
   margin: 3rem 1rem;
   background: rgba(241, 28, 60, 0.884);
+  border-radius: 6px;
 }
 
 .specialize .grid-container > div i {
@@ -252,7 +253,7 @@ section.skills .grid-container > div {
 }
 
 section.skills h3 {
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   padding: 1rem 0;
   font-size: 2.3rem;
   padding-top: 1rem;
@@ -261,7 +262,7 @@ section.skills h3 {
 
 section.skills h3:after {
   content: '';
-  border: 3px solid white;
+  border: 3px solid rgba(255, 255, 255, 0.925);
   border-radius: 25px;
   display: block;
   margin: 0 auto;
@@ -291,7 +292,7 @@ section.projects h3 {
 
 section.projects h3:after {
   content: '';
-  border: 3px solid white;
+  border: 3px solid rgba(241, 28, 60, 0.884);
   border-radius: 25px;
   display: block;
   margin: 0 auto;
@@ -312,15 +313,18 @@ section.projects h3:after {
   position: relative;
   margin: auto;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .content img {
   width: 100%;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .content .content-overlay {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 28, 60, 0.884)), to(rgba(241, 28, 60, 0.541)));
-  background: linear-gradient(rgba(241, 28, 60, 0.884), rgba(241, 28, 60, 0.541));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 28, 60, 0.945)), to(rgba(241, 28, 60, 0.767)));
+  background: linear-gradient(rgba(241, 28, 60, 0.945), rgba(241, 28, 60, 0.767));
   position: absolute;
   height: 98%;
   width: 100%;
@@ -331,6 +335,7 @@ section.projects h3:after {
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  border-radius: 6px;
 }
 
 .content .content:hover .content-overlay {
@@ -358,10 +363,184 @@ section.projects h3:after {
 }
 
 .content .content:hover .content-details h3 {
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
 }
 
 .content .content:hover .content-details p {
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+section.contact-me {
+  padding: 3rem 1rem;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+section.contact-me h3 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.925);
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+section.contact-me h3:after {
+  content: '';
+  border: 3px solid rgba(255, 255, 255, 0.925);
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+}
+
+section.contact-me .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+section.contact-me .grid-container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+section.contact-me .grid-container input {
+  padding: 1rem 1rem;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.925);
+  margin: 0 auto;
+  border-radius: 6px;
+  line-height: 3rem;
+}
+
+section.contact-me .grid-container textarea {
+  padding: 1rem 1rem;
+  display: block;
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.925);
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+section.contact-me .grid-container button {
+  padding: 1rem 1rem;
+  width: 50%;
+  border: none;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.925);
+  margin: 0 auto;
+  border-radius: 6px;
+  background: rgba(241, 28, 60, 0.884);
+  color: rgba(255, 255, 255, 0.925);
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section.contact-me .grid-container button:hover {
+  background: rgba(255, 255, 255, 0.925);
+  color: rgba(241, 28, 60, 0.884);
+}
+
+section.contact-me .my-info h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.925);
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+section.contact-me .my-info h2:after {
+  content: '';
+  border: 3px solid rgba(255, 255, 255, 0.925);
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+}
+
+section.contact-me .my-info .grid-container2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+section.contact-me .my-info .grid-container2 > div {
+  background: rgba(255, 255, 255, 0.925);
+  color: rgba(241, 28, 60, 0.884);
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-radius: 6px;
+}
+
+section.contact-me .my-info .grid-container2 > div i, section.contact-me .my-info .grid-container2 > div p {
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+section.contact-me .my-info .grid-container2 > div p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+section.footer {
+  padding: 3rem 1rem;
+  background: rgba(241, 28, 60, 0.884);
+}
+
+section.footer .grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+section.footer .grid-container p {
+  font-size: 1.1rem;
+}
+
+section.footer .grid-container .footer-icons i {
+  margin: 0 1rem;
+  padding: 0.6rem;
+  border-radius: 6%;
+  color: rgba(255, 255, 255, 0.925);
+  border: 3px solid white;
 }
 /*# sourceMappingURL=styles.css.map */

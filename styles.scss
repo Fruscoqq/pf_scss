@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
-$primary-color: rgb(255, 255, 255);
+$primary-color: rgba(255, 255, 255, 0.925);
 $secondary-color: rgba(241, 28, 60, 0.884);
 $bg-color: #3c164d;
 $bg-secondary: rgb(222, 228, 238);
@@ -207,6 +207,7 @@ section#about-me{
       margin: 3rem 1rem;
       background: $secondary-color;
       // border-radius: 9% 91% 15% 85% / 94% 8% 92% 6% ;
+      border-radius: 6px;
 
       i{
         padding: 2rem 0;
@@ -236,7 +237,7 @@ section.skills{
       display: flex;
       align-items: center;
       justify-content: center;
-    }
+      }
     }
 
 
@@ -281,7 +282,7 @@ section.projects{
 
     &:after {
       content: '';
-      border: 3px solid $primary-color;
+      border: 3px solid $secondary-color;
       border-radius: 25px;
       display: block;
       margin: 0 auto;
@@ -304,14 +305,16 @@ section.projects{
   // width: 400px;
   margin: auto;
   overflow: hidden;
-
+  border-radius: 6px;
+ 
   img{
     width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   
 
   .content-overlay {
-    background: linear-gradient(rgba(241, 28, 60, 0.884), rgba(241, 28, 60, 0.541));
+    background: linear-gradient(rgba(241, 28, 60, 0.945), rgba(241, 28, 60, 0.767));
     position: absolute;
     height: 98%;
     width: 100%;
@@ -321,7 +324,7 @@ section.projects{
     right: 0;
     opacity: 0;
     transition: all 0.4s ease-in-out;
-
+    border-radius: 6px;
   }
 
   .content:hover .content-overlay{
@@ -353,4 +356,175 @@ section.projects{
       color: $primary-color;
     }
   }
+}
+
+// CONTACT ME
+
+section.contact-me {
+  padding: 3rem 1rem;
+  color: $primary-color;
+
+  h3{
+    text-align: center;
+    color: $primary-color;
+    padding: 1rem 0;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      border: 3px solid $primary-color;
+      border-radius: 25px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 20%;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+
+    form {
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+    }
+
+    input {
+      padding: 1rem 1rem;
+      width: 100%;
+      border: none;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      background: $primary-color;
+      margin: 0 auto;
+      border-radius: 6px;
+      line-height: 3rem;
+    }
+
+    textarea {
+      padding: 1rem 1rem;
+      display: block;
+      width: 100%;
+      border: none;
+      font-size: 1.4rem;
+      background: $primary-color;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 1rem 1rem;
+      width: 50%;
+      border: none;
+      font-size: 1.1rem;
+      background: $primary-color;
+      margin: 0 auto;
+      border-radius: 6px;
+      background: $secondary-color;
+      color: $primary-color;
+      transition: 0.1s all ease-in;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        background: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  // Contact Info
+
+  .my-info {
+  
+
+    h2{
+      text-align: center;
+      color: $primary-color;
+      padding: 1rem 0;
+      font-size: 2.3rem;
+      padding-top: 1rem;
+      font-weight: 700;
+  
+      &:after {
+        content: '';
+        border: 3px solid $primary-color;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 20%;
+      }
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      & > div {
+        background: $primary-color;
+        color: $secondary-color;
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        border-radius: 6px;
+
+        i, p {
+          margin-left: 1rem;
+          line-height: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+}
+
+
+// Footer
+
+section.footer {
+  padding: 3rem 1rem;
+  background: $secondary-color;
+  
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary-color;
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .footer-icons i {
+      margin: 0 1rem;
+      padding: 0.6rem;
+      // background: $primary-color;
+      border-radius: 6%;
+      color: $primary-color;
+      border: 3px solid white;
+    }
+
+  }
+  
+
 }
