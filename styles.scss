@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 $primary-color: rgba(255, 255, 255, 0.925);
-$secondary-color: rgba(241, 28, 60, 0.678);
+$secondary-color: rgba(241, 28, 60, 0.849);
 $bg-color: #3c164d;
 $bg-secondary: rgb(222, 228, 238);
 
@@ -502,17 +502,17 @@ section.contact-me {
 // Footer
 
 section.footer {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   background: $secondary-color;
   
   .grid-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: $primary-color;
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .footer-icons i {
@@ -521,7 +521,7 @@ section.footer {
       // background: $primary-color;
       border-radius: 6%;
       color: $primary-color;
-      border: 3px solid white;
+      border: 2px solid $primary-color;
     }
 
   }
