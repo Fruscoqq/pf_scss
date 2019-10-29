@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import './partials/animatedArrow';
+@import './partials/mobileNavbar';
 
 $primary-color: rgba(255, 255, 255, 0.925);
-$secondary-color: rgba(241, 28, 60, 0.849);
-$bg-color: #3c164d;
+$secondary-color: rgb(241, 28, 60);
+$bg-color: rgb(60, 22, 77);
 $bg-secondary: rgb(222, 228, 238);
+
+
 
 * {
   margin: 0;
@@ -16,8 +20,8 @@ $bg-secondary: rgb(222, 228, 238);
 
 .container {
   max-width: 1400px;
-  padding: 0 1.5rem;
-  margin: auto;
+  padding: 0 1.6rem;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -41,8 +45,16 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0;
+  justify-content: space-around;
+  padding: 1rem 0;
+  background: transparent;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  border: none;
+  transition: background 0.3s;
   
   
 
@@ -66,7 +78,7 @@ nav {
     display: flex;
 
     a{
-      margin-left: 3rem;
+      margin: 0 3rem;
       color: $primary-color;
       border-bottom: 3px transparent solid;
       transition: 0.3s border-color;
@@ -87,7 +99,8 @@ section#showcase {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  
   
 
   h3{
@@ -125,14 +138,11 @@ section#showcase {
 
 section#about-me{
   color: $primary-color;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
   text-align: center;
   padding: 3rem 1rem;
   margin: auto;
   background: linear-gradient(rgb(60, 22, 77), rgba(60, 22, 77, 0.555));
+  z-index: 2;
 
   .container {
     max-width: 900px;
@@ -177,6 +187,7 @@ section#about-me{
   text-align: center;
   background: rgb(222, 228, 238);
   color: $primary-color;
+  
 
   h3{
     color: $secondary-color;
@@ -206,8 +217,8 @@ section#about-me{
       grid-gap: 1rem;
       margin: 3rem 1rem;
       background: $secondary-color;
-      // border-radius: 9% 91% 15% 85% / 94% 8% 92% 6% ;
       border-radius: 6px;
+     
 
       i{
         padding: 2rem 0;
@@ -227,18 +238,30 @@ section#about-me{
 section.skills{
   text-align: center;
   padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden;
+
+  .figure {
+    height: 200px;
+    width: 200px;
+    background: rgba(241, 28, 60, 0.829);
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    right: -80px;
+    border-radius: 50%;
+
+  }
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-
-    & > div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      }
+    justify-content: center;
+    align-items: center;
     }
+
+   
 
 
   h3{
@@ -272,6 +295,7 @@ section.projects{
   padding: 3rem 1rem;
   background: $bg-secondary;
   text-align: center;
+  
 
   h3{
     color: $secondary-color;
@@ -306,9 +330,11 @@ section.projects{
   margin: auto;
   overflow: hidden;
   border-radius: 6px;
+  cursor: pointer;
  
   img{
     width: 100%;
+    border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   
@@ -363,6 +389,20 @@ section.projects{
 section.contact-me {
   padding: 3rem 1rem;
   color: $primary-color;
+  position: relative;
+  overflow: hidden;
+
+  .figure {
+    height: 200px;
+    width: 200px;
+    background: rgba(228, 221, 222, 0.199);
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    right: 60px;
+    border-radius: 24% 76% 32% 68% / 18% 29% 71% 82% ;
+
+  }
 
   h3{
     text-align: center;
@@ -384,7 +424,7 @@ section.contact-me {
     }
   }
 
-  .grid-container {
+  .grid-container-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -468,6 +508,8 @@ section.contact-me {
       }
     }
 
+
+
     .grid-container2 {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -513,6 +555,7 @@ section.footer {
 
     p {
       font-size: 1rem;
+      padding: 2rem 0;
     }
 
     .footer-icons i {
@@ -525,6 +568,59 @@ section.footer {
     }
 
   }
-  
+}
+
+
+// Media Quaries
+
+// Mobile
+@media only screen and (max-width: 768px) {
+  .grid-container-contact {
+    grid-template-columns: unquote("repeat(1, 1fr)")
+  }
+
+  // Navbar
+ nav {
+   display: none;
+ }
+
+ section.specialize {
+   .grid-container {
+     grid-template-columns: repeat(1, 1fr);
+   }
+ }
+
+ section.skills {
+   .grid-container {
+     grid-template-columns: repeat(2, 1fr);
+    //  padding: 0 2rem;
+   }
+
+  i {
+    color: $primary-color;
+    margin: 0;
+  }
+ }
+
+ .mobile-navbar {
+   display: block;
+ }
+
+//  Specialize
+section.contact-me {
+  .grid-container-contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+section.footer {
+  .grid-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+// Arrow animation
 
 }

@@ -5,13 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./dist/css/styles.css">
+  <link rel="stylesheet" href="./dist/css/main.css">
   <title>My Portoflio</title>
 </head>
 
 <body>
   <header>
+    <!-- Mobile navbar -->
+    <div class="mobile-navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle"><i class="fas fa-bars"></i></span>
+      <h3><span class="h3-span">My</span> Portoflio.</h3>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">Work</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
+      <!-- Dekstop navbar -->
       <nav>
         <div class="nav-brand">
           <h3><span class="h3-span">My</span> Portoflio.</h3>
@@ -31,6 +51,7 @@
           </a>
         </ul>
       </nav>
+      <!-- Showcase -->
       <section id="showcase">
         <h3>I'm Arvydas Kelmanas</h3>
         <span class="txt-type" data-wait="3000"
@@ -38,6 +59,30 @@
             class="txt">Web
             Desig</span></span>
         <a href="#" class="work-btn">View my work</a>
+        <!-- Anim -->
+        <div class="ico animated">
+          <div class="circle circle-top"></div>
+          <div class="circle circle-main"></div>
+          <div class="circle circle-bottom"></div>
+          <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+            <defs>
+              <clipPath id="cut-off-arrow">
+                <circle cx="306" cy="306" r="287" />
+              </clipPath>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+            <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                            l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                            c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                            c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+          </svg>
+        </div>
       </section>
     </div>
   </header>
@@ -53,12 +98,6 @@
           that leads to meeting business goals. With my experience I can:
         </p>
       </div>
-      <!-- <ul class="help-list">
-        <li>Create responsive websites that work on a wide range of devices</li>
-        <li>Assist with production of clean and functional design</li>
-        <li>Bridge communication gap between designers and developers</li>
-        <li>Integrate your website into an easy to use content management system</li>
-      </ul> -->
     </div>
     </div>
   </section>
@@ -90,6 +129,7 @@
         </div>
       </div>
     </div>
+    <div class="figure"></div>
   </section>
 
   <!-- SKILLS -->
@@ -97,32 +137,17 @@
     <div class="container">
       <h3>My Skills</h3>
       <div class="grid-container">
-        <div class="grid-1">
-          <i class="fab fa-github fa-6x"></i>
-        </div>
-        <div class="grid-2">
-          <i class="fab fa-git fa-6x"></i>
-        </div>
-        <div class="grid-3">
-          <i class="fab fa-node fa-6x"></i>
-        </div>
-        <div class="grid-4">
-          <i class="fab fa-html5 fa-6x"></i>
-        </div>
-        <div class="grid-6">
-          <i class="fab fa-css3-alt fa-6x"></i>
-        </div>
-        <div class="grid-7">
-          <i class="fab fa-sass fa-6x"></i>
-        </div>
-        <div class="grid-8">
-          <i class="fab fa-npm fa-6x"></i>
-        </div>
-        <div class="grid-9">
-          <i class="fab fa-js-square fa-6x"></i>
-        </div>
+        <i class="fab fa-github fa-6x"></i>
+        <i class="fab fa-git fa-6x"></i>
+        <i class="fab fa-node fa-6x"></i>
+        <i class="fab fa-html5 fa-6x"></i>
+        <i class="fab fa-css3-alt fa-6x"></i>
+        <i class="fab fa-sass fa-6x"></i>
+        <i class="fab fa-npm fa-6x"></i>
+        <i class="fab fa-js-square fa-6x"></i>
       </div>
     </div>
+    <div class="figure"></div>
   </section>
 
   <!-- PROJECTS -->
@@ -174,7 +199,7 @@
   <section class="contact-me">
     <div class="container">
       <h3>Contact me</h3>
-      <div class="grid-container">
+      <div class="grid-container-contact">
         <form>
           <h3>Send a message</h3>
           <input type="text" name="name" placeholder="Your Name">
@@ -202,34 +227,30 @@
         </div>
       </div>
     </div>
+    <div class="figure"></div>
   </section>
 
   <!-- Footer -->
   <section class="footer">
-    <div class="container">
-      <div class="grid-container">
-        <div class="footer-text">
-          <p>Copyright © 2019 Arvydas Kelmanas. All rights reserved.</p>
-        </div>
-        <div class="footer-icons">
-          <i class="fab fa-github "></i>
-          <i class="fab fa-google "></i>
-          <i class="fab fa-linkedin "></i>
-          <i class="fab fa-facebook-square "></i>
-        </div>
+    <div class="grid-container">
+      <div class="footer-text">
+        <p>Copyright © 2019 Arvydas Kelmanas. All rights reserved.</p>
+      </div>
+      <div class="footer-icons">
+        <i class="fab fa-github "></i>
+        <i class="fab fa-google "></i>
+        <i class="fab fa-linkedin "></i>
+        <i class="fab fa-facebook-square "></i>
       </div>
     </div>
   </section>
 
 
+
+
   <script src="https://kit.fontawesome.com/bd9f61eaab.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function () {
-      console.log('callback - particles.js config loaded');
-    });
-  </script>
   <script src="./dist/js/typewritter.js"></script>
+  <script src="./dist/js/app.js"></script>
 </body>
 
 </html>
