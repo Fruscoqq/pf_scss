@@ -208,6 +208,20 @@ section#showcase {
     margin: 2rem 0;
     color: rgba(255, 255, 255, 0.925);
     font-size: 2.3rem; }
+  section#showcase .showcase-text {
+    animation: animate 12s linear infinite; }
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px) rotate(0deg); }
+  25% {
+    transform: translateX(10px) rotate(3deg); }
+  50% {
+    transform: translateY(-10px) rotate(-1deg); }
+  75% {
+    transform: translateX(0px) rotate(0deg); }
+  100% {
+    transform: translateY(0px) rotate(0deg); } }
   section#showcase span {
     margin: 2rem 0;
     color: rgba(255, 255, 255, 0.925);
@@ -307,7 +321,14 @@ section.skills {
     z-index: -1;
     top: -80px;
     right: -80px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    animation: floating 10s linear infinite; }
+
+@keyframes floating {
+  25% {
+    transform: translateY(20px) rotate(6deg); }
+  50% {
+    transform: translateX(12px) rotate(3deg); } }
   section.skills .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -414,7 +435,14 @@ section.contact-me {
     z-index: -1;
     top: 40px;
     right: 60px;
-    border-radius: 24% 76% 32% 68% / 18% 29% 71% 82%; }
+    border-radius: 24% 76% 32% 68% / 18% 29% 71% 82%;
+    animation: floating 10s linear infinite; }
+
+@keyframes floating {
+  25% {
+    transform: translateY(20px) rotate(6deg); }
+  50% {
+    transform: translateX(12px) rotate(3deg); } }
   section.contact-me h3 {
     text-align: center;
     color: rgba(255, 255, 255, 0.925);

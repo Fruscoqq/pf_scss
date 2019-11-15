@@ -206,12 +206,13 @@
     <div class="container">
       <h3>Contact me</h3>
       <div class="grid-container-contact">
-        <form>
+        <form method="POST" data-netlify="true">
           <h3>Send a message</h3>
           <input type="text" name="name" placeholder="Your Name">
           <input type="email" name="email" placeholder="Your Email">
           <textarea name="message" rows="6" placeholder="Enter your message"></textarea>
           <button type="submit">Submit</button>
+          <div class="captcha" data-netlify-recaptcha="true"></div>
         </form>
         <div class="my-info">
           <h2>Contact Info</h2>
@@ -259,9 +260,9 @@
   <script src="./dist/js/app.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 
-  <script>
+  <!-- <script>
     gsap.from('.showcase-text', { opacity: 0, duration: 2, y: -50, ease: 'elastic(9, 6)' });
-  </script>
+  </script> -->
 </body>
 
 </html>
