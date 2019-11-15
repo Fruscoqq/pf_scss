@@ -79,21 +79,24 @@
 
 .mobile-navbar {
   display: none;
-  background: #0c6be7;
+  background: #141414;
   padding: 1rem;
   position: fixed;
   width: 100%;
-  z-index: 3; }
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .mobile-navbar .navbar-toggle {
     position: absolute;
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.925);
+    color: rgba(241, 238, 238, 0.966);
     font-size: 1.6rem; }
   .mobile-navbar h3 {
     padding: 0.4rem 2rem;
-    color: rgba(255, 255, 255, 0.925);
+    color: rgba(241, 238, 238, 0.966);
     font-size: 1.1rem; }
     .mobile-navbar h3 span {
       background: rgba(241, 28, 60, 0.849);
@@ -107,9 +110,25 @@
   .mobile-navbar li {
     text-align: center;
     margin: 2rem auto;
-    font-weight: bold; }
+    font-weight: bold;
+    animation: mymove .3s; }
+
+@keyframes mymove {
+  from {
+    margin: .1rem; }
+  to {
+    margin: 2rem; } }
     .mobile-navbar li a {
-      color: rgba(255, 255, 255, 0.925); }
+      position: relative;
+      color: rgba(241, 238, 238, 0.966);
+      transition: 1s all ease-in;
+      animation: secondmove .3s; }
+
+@keyframes secondmove {
+  from {
+    opacity: .1; }
+  to {
+    opacity: 1; } }
   .mobile-navbar .active {
     display: block; }
 
@@ -120,6 +139,9 @@
   text-decoration: none;
   list-style-type: none;
   line-height: 150%; }
+
+.mobile-navbar {
+  display: none; }
 
 .container {
   max-width: 1400px;

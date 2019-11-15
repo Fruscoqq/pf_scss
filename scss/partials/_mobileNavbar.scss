@@ -1,4 +1,4 @@
-$primary-color: rgba(255, 255, 255, 0.925);
+$primary-color: rgba(241, 238, 238, 0.966);
 $secondary-color: rgba(241, 28, 60, 0.849);
 $bg-color: rgb(60, 22, 77);
 $bg-secondary: rgb(222, 228, 238);
@@ -7,11 +7,14 @@ $bg-secondary: rgb(222, 228, 238);
 
 .mobile-navbar {
   display: none;
-  background: #0c6be7;
+  background: #141414;
   padding: 1rem;
   position: fixed;
   width: 100%;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 
   .navbar-toggle {
@@ -47,9 +50,23 @@ $bg-secondary: rgb(222, 228, 238);
     text-align: center;
     margin: 2rem auto;
     font-weight: bold;
+    animation: mymove .3s ;
+
+    @keyframes mymove {
+      from {margin: .1rem;}
+      to {margin: 2rem;}
+    }
 
     a {
+      position: relative;
       color: $primary-color;
+      transition: 1s all ease-in;
+      animation: secondmove .3s;
+
+      @keyframes secondmove {
+        from {opacity: .1;}
+        to {opacity: 1;}
+      }
     }
   }
 

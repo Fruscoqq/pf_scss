@@ -14,10 +14,20 @@ function scrollFunction() {
 
 
 // Mobile Navbar
+// let mainNav = document.querySelector('#js-menu'),
+//   navBarToggle = document.querySelector('#js-navbar-toggle');
 
-let mainNav = document.querySelector('#js-menu'),
-  navBarToggle = document.querySelector('#js-navbar-toggle');
+// navBarToggle.addEventListener('click', function () {
+//   mainNav.classList.toggle('active');
+// })
 
-navBarToggle.addEventListener('click', function () {
-  mainNav.classList.toggle('active');
-})
+
+// Hamburger menu
+const hamburger = document.querySelector(".hamburger"),
+  navBarToggle = document.querySelector('#js-menu');
+// On click
+hamburger.addEventListener("click", function () {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  navBarToggle.classList.toggle('active');
+});

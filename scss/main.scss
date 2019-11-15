@@ -18,6 +18,10 @@ $bg-secondary: rgb(222, 228, 238);
   line-height: 150%;
 }
 
+.mobile-navbar{
+  display: none;
+}
+
 .container {
   max-width: 1400px;
   padding: 0 1.6rem;
