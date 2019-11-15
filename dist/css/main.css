@@ -504,6 +504,8 @@ section.contact-me {
       section.contact-me .grid-container-contact button:hover {
         background: rgba(255, 255, 255, 0.925);
         color: #f11c3c; }
+    section.contact-me .grid-container-contact .recaptcha {
+      margin: 0 auto; }
   section.contact-me .my-info h2 {
     text-align: center;
     color: rgba(255, 255, 255, 0.925);
