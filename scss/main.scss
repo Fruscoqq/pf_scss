@@ -111,6 +111,7 @@ section#showcase {
     margin: 2rem 0;
     color: $primary-color;
     font-size: 2.3rem;
+    text-align: center;
   }
 
   .showcase-text {
@@ -122,10 +123,10 @@ section#showcase {
       transform:translateY(0px) rotate(0deg);
     }
     25% {
-      transform: translateX(10px) rotate(3deg);
+      transform: translateX(3px) rotate(1deg);
     }
     50% {
-      transform: translateY(-10px) rotate(-1deg);
+      transform: translateY(-3px) rotate(-1deg);
     }
     75% {
       transform: translateX(0px) rotate(0deg);
@@ -140,6 +141,7 @@ section#showcase {
     color: $primary-color;
     font-size: 2.1rem;
     font-weight: 900;
+    text-align: center;
   }
 
   .work-btn {
