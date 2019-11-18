@@ -18,6 +18,10 @@ $bg-secondary: rgb(222, 228, 238);
   line-height: 150%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mobile-navbar{
   display: none;
 }
@@ -329,7 +333,7 @@ section.skills{
 
 // PROJECTS
 
-section.projects{
+section#projects{
   padding: 3rem 1rem;
   background: $bg-secondary;
   text-align: center;
@@ -424,7 +428,7 @@ section.projects{
 
 // CONTACT ME
 
-section.contact-me {
+section#contact-me {
   padding: 3rem 1rem;
   color: $primary-color;
   position: relative;
@@ -612,10 +616,17 @@ section.footer {
     .footer-icons i {
       margin: 0 1rem;
       padding: 0.6rem;
-      // background: $primary-color;
       border-radius: 6%;
       color: $primary-color;
       border: 2px solid $primary-color;
+      cursor: pointer;
+      background: $secondary-color;
+      transition: .3s background, color ease;
+
+      &:hover {
+        color: $secondary-color;
+        background: $primary-color;
+      }
     }
 
   }
@@ -647,7 +658,7 @@ section.footer {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  section.projects{
+  section#projects{
     .grid-container2 {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -657,7 +668,7 @@ section.footer {
 // Mobile - 500px
 @media only screen and (max-width: 500px) {
   .grid-container-contact {
-    grid-template-columns: unquote("repeat(1, 1fr)")
+    grid-template-columns: repeat(1, 1fr);
   }
 
   // Navbar
@@ -688,7 +699,7 @@ section.footer {
  }
 
 //  Specialize
-section.contact-me {
+section#contact-me {
   .grid-container-contact {
     grid-template-columns: repeat(1, 1fr);
   }
