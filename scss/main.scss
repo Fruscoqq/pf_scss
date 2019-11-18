@@ -595,7 +595,7 @@ section.contact-me {
 // Footer
 
 section.footer {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background: $secondary-color;
   
   .grid-container {
@@ -624,8 +624,38 @@ section.footer {
 
 // Media Quaries
 
-// Mobile
+// Tablet - 1024
+@media only screen and (max-width: 1024px) {
+  section.specialize {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Tablet - 768px
 @media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+  }
+
+  section.specialize {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  section.projects{
+    .grid-container2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+// Mobile - 500px
+@media only screen and (max-width: 500px) {
   .grid-container-contact {
     grid-template-columns: unquote("repeat(1, 1fr)")
   }
@@ -634,6 +664,10 @@ section.footer {
  nav {
    display: none;
  }
+
+ .mobile-navbar {
+  display: block;
+}
 
  section.specialize {
    .grid-container {
@@ -648,13 +682,9 @@ section.footer {
    }
 
   i {
-    color: $primary-color;
+    color: $secondary-color;
     margin: 0;
   }
- }
-
- .mobile-navbar {
-   display: block;
  }
 
 //  Specialize
@@ -671,7 +701,7 @@ section.footer {
     padding: 1rem 0;
   }
 }
-
-// Arrow animation
-
 }
+
+
+
