@@ -424,7 +424,7 @@ section#projects{
 
     h4 {
       color: #f4f4f4;
-      font-size: 1.3rem;
+      font-size: 1rem;
       padding-bottom: 1rem;
     }
 
@@ -713,12 +713,80 @@ section#contact-me {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+// Project
 
+.content {
+  position: relative;
+  // width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+ 
+  img{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+
+  .content-overlay {
+    background: linear-gradient(rgba(241, 28, 60, 0.945), rgba(241, 28, 60, 0.767));
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    border-radius: 6px;
+  }
+
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding: 0 1rem;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid $primary-color;
+    
+  }
+
+  .content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    padding: 1rem;
+    
+
+    h4 {
+      color: #f4f4f4;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      color: $primary-color;
+      font-size: .7rem;
+    }
+  }
+}
+
+// Footer
 section.footer {
   .grid-container {
     flex-direction: column;
     text-align: center;
-    padding: 1rem 0;
   }
 }
 }
