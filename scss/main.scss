@@ -3,7 +3,7 @@
 @import './partials/mobileNavbar';
 
 $primary-color: rgba(255, 255, 255, 0.925);
-$secondary-color: rgb(241, 28, 60);
+$secondary-color: rgb(224, 47, 74);
 $bg-color: rgb(60, 22, 77);
 $bg-secondary: rgb(222, 228, 238);
 
@@ -282,7 +282,7 @@ section.skills{
     top: -80px;
     right: -80px;
     border-radius: 50%;
-    animation: floating 10s linear infinite;
+    animation: floating 12s linear infinite;
   }
 
   @keyframes floating {
@@ -327,7 +327,9 @@ section.skills{
 
   i{
     color: $secondary-color;
-    margin: 3rem;
+    margin: 1rem;
+    // border: 1.2px solid $secondary-color;
+    // background: $primary-color;
   }
 }
 
@@ -409,19 +411,26 @@ section#projects{
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
+    border: 1px solid $primary-color;
+    
   }
 
   .content:hover .content-details {
     top: 50%;
     left: 50%;
     opacity: 1;
+    padding: 1rem;
+    
 
-    h3 {
-      color: $primary-color;
+    h4 {
+      color: #f4f4f4;
+      font-size: 1.3rem;
+      padding-bottom: 1rem;
     }
 
     p {
       color: $primary-color;
+      font-size: 1rem;
     }
   }
 }

@@ -182,7 +182,7 @@ nav {
     color: rgba(255, 255, 255, 0.925);
     font-size: 1.6rem; }
     nav .nav-brand h3 span {
-      background: #f11c3c;
+      background: #e02f4a;
       padding: 1rem;
       border: solid 0 white;
       border-radius: 50%;
@@ -199,7 +199,7 @@ nav {
       padding: 0.6rem 0;
       font-weight: 600; }
       nav .nav-list a:hover {
-        border-color: #f11c3c; }
+        border-color: #e02f4a; }
 
 section#showcase {
   display: flex;
@@ -236,13 +236,13 @@ section#showcase {
     margin: 2rem 0;
     color: rgba(255, 255, 255, 0.925);
     padding: 2rem 2rem;
-    background: #f11c3c;
+    background: #e02f4a;
     transition: .3s ease;
     border-radius: 30% 70% 26% 74% / 30% 30% 70% 70%;
     text-transform: uppercase;
     font-weight: 900; }
     section#showcase .work-btn:hover {
-      color: #f11c3c;
+      color: #e02f4a;
       background: rgba(255, 255, 255, 0.925); }
 
 section#about-me {
@@ -260,7 +260,7 @@ section#about-me {
     font-weight: 700; }
     section#about-me h1:after {
       content: '';
-      border: 3px solid #f11c3c;
+      border: 3px solid #e02f4a;
       border-radius: 25px;
       display: block;
       margin: 0 auto;
@@ -282,14 +282,14 @@ section#about-me {
   background: #dee4ee;
   color: rgba(255, 255, 255, 0.925); }
   .specialize h3 {
-    color: #f11c3c;
+    color: #e02f4a;
     padding: 1rem 0;
     font-size: 2.3rem;
     padding-top: 1rem;
     font-weight: 700; }
     .specialize h3:after {
       content: '';
-      border: 3px solid #f11c3c;
+      border: 3px solid #e02f4a;
       border-radius: 25px;
       display: block;
       margin: 0 auto;
@@ -304,7 +304,7 @@ section#about-me {
       flex-direction: column;
       grid-gap: 1rem;
       margin: 3rem 1rem;
-      background: #f11c3c;
+      background: #e02f4a;
       border-radius: 6px; }
       .specialize .grid-container > div i {
         padding: 2rem 0; }
@@ -327,7 +327,7 @@ section.skills {
     top: -80px;
     right: -80px;
     border-radius: 50%;
-    animation: floating 10s linear infinite; }
+    animation: floating 12s linear infinite; }
 
 @keyframes floating {
   25% {
@@ -356,22 +356,22 @@ section.skills {
       margin-bottom: 1rem;
       width: 20%; }
   section.skills i {
-    color: #f11c3c;
-    margin: 3rem; }
+    color: #e02f4a;
+    margin: 1rem; }
 
 section#projects {
   padding: 3rem 1rem;
   background: #dee4ee;
   text-align: center; }
   section#projects h3 {
-    color: #f11c3c;
+    color: #e02f4a;
     padding: 1rem 0;
     font-size: 2.3rem;
     padding-top: 1rem;
     font-weight: 700; }
     section#projects h3:after {
       content: '';
-      border: 3px solid #f11c3c;
+      border: 3px solid #e02f4a;
       border-radius: 25px;
       display: block;
       margin: 0 auto;
@@ -417,15 +417,20 @@ section#projects {
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.925); }
   .content .content:hover .content-details {
     top: 50%;
     left: 50%;
-    opacity: 1; }
-    .content .content:hover .content-details h3 {
-      color: rgba(255, 255, 255, 0.925); }
+    opacity: 1;
+    padding: 1rem; }
+    .content .content:hover .content-details h4 {
+      color: #f4f4f4;
+      font-size: 1.3rem;
+      padding-bottom: 1rem; }
     .content .content:hover .content-details p {
-      color: rgba(255, 255, 255, 0.925); }
+      color: rgba(255, 255, 255, 0.925);
+      font-size: 1rem; }
 
 section#contact-me {
   padding: 3rem 1rem;
@@ -501,14 +506,14 @@ section#contact-me {
       background: rgba(255, 255, 255, 0.925);
       margin: 0 auto;
       border-radius: 6px;
-      background: #f11c3c;
+      background: #e02f4a;
       color: rgba(255, 255, 255, 0.925);
       transition: 0.1s all ease-in;
       cursor: pointer;
       font-weight: bold; }
       section#contact-me .grid-container-contact button:hover {
         background: rgba(255, 255, 255, 0.925);
-        color: #f11c3c; }
+        color: #e02f4a; }
     section#contact-me .grid-container-contact .recaptcha {
       margin: 0 auto; }
   section#contact-me .my-info h2 {
@@ -535,7 +540,7 @@ section#contact-me {
     gap: 1rem; }
     section#contact-me .my-info .grid-container2 > div {
       background: rgba(255, 255, 255, 0.925);
-      color: #f11c3c;
+      color: #e02f4a;
       width: 100%;
       margin: 1rem 0;
       padding: 1rem 0;
@@ -549,7 +554,7 @@ section#contact-me {
 
 section.footer {
   padding: 1rem 1rem;
-  background: #f11c3c; }
+  background: #e02f4a; }
   section.footer .grid-container {
     display: flex;
     align-items: center;
@@ -565,10 +570,10 @@ section.footer {
       color: rgba(255, 255, 255, 0.925);
       border: 2px solid rgba(255, 255, 255, 0.925);
       cursor: pointer;
-      background: #f11c3c;
+      background: #e02f4a;
       transition: .3s background, color ease; }
       section.footer .grid-container .footer-icons i:hover {
-        color: #f11c3c;
+        color: #e02f4a;
         background: rgba(255, 255, 255, 0.925); }
 
 @media only screen and (max-width: 1024px) {
@@ -597,7 +602,7 @@ section.footer {
   section.skills .grid-container {
     grid-template-columns: repeat(2, 1fr); }
   section.skills i {
-    color: #f11c3c;
+    color: #e02f4a;
     margin: 0; }
   section#contact-me .grid-container-contact {
     grid-template-columns: repeat(1, 1fr); }
