@@ -380,7 +380,7 @@ section#projects {
 
 .grid-container2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-gap: 0.6rem; }
 
 .content {
@@ -587,7 +587,7 @@ section.footer {
   section.specialize .grid-container {
     grid-template-columns: repeat(2, 1fr); }
   section#projects .grid-container2 {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); } }
 
 @media only screen and (max-width: 500px) {
   .grid-container-contact {
@@ -603,6 +603,9 @@ section.footer {
   section.skills i {
     color: #e02f4a;
     margin: 0; }
+  .grid-container2 {
+    display: flex;
+    flex-direction: column; }
   section#contact-me .grid-container-contact {
     grid-template-columns: repeat(1, 1fr); }
   .content {
